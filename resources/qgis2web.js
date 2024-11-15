@@ -4,7 +4,7 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [101.343300, -1.972731, 101.369141, -1.958912], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [101.342862, -1.971590, 101.368703, -1.957770], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'EPSG:4326',
             //extent: [-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789],
             units: 'degrees'})
@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([101.343300, -1.972731, 101.369141, -1.958912], map.getSize());
+map.getView().fit([101.342862, -1.971590, 101.368703, -1.957770], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -918,7 +918,7 @@ document.getElementsByClassName('gcd-gl-btn')[0].className += ' fa fa-search';
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_BANGUNAN_PELANGGAN_8,
+    layer: lyr_BANGUNAN_PELANGGAN_7,
     colName: 'ID_2',
     zoom: 10,
     collapsed: true,
